@@ -8,7 +8,7 @@ namespace TestApp
     {
         static void Main()
         {
-            var timeZoneInfo = TZConvert.GetTimeZoneInfo("Europe/Belgrade");
+            var timeZoneInfo = TZConvert.GetTimeZoneInfo("Europe/Moscow");
             Console.WriteLine(timeZoneInfo);
             Console.WriteLine($"BaseUtcOffset: {timeZoneInfo.BaseUtcOffset}");
             Console.WriteLine($"DTS offset: {timeZoneInfo.GetAdjustmentRules().FirstOrDefault()?.DaylightDelta.ToString() ?? "N/A"}");
